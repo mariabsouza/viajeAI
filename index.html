@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.svg">
+    <link
+    rel='stylesheet'
+    href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css'
+  />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@200;300;500&family=Roboto+Slab:wght@300;400&family=Source+Code+Pro:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>ViajeAI</title>
+  </head>
+  <body>
+    <header></header>
+
+    <section id="home">
+
+      <div><img src="assets/img/illustration.svg" alt="" /></div>
+      <div class="text">
+        <div id="description">
+          <h1>Bem vindo ao Viaje<span>AI</span></h1>
+          <p>Planeje uma viagem em poucos segundos!</p>
+          <p>
+            O Viaje<span>AI</span> utiliza a inteligência artificial da OpenAI e
+            cria um roteiro de viagem a partir de informações fornecidas pelo
+            usuário
+          </p>
+        </div>
+        <a href="#tripForm" class="button">Criar um roteiro</a>
+      </div>
+
+    </section>
+
+    <section id="tripForm">
+      <div>
+        <h1>Preencha o formulário:</h1>
+        <form>
+          <div class="form-control">
+            <label for="city">Cidade de destino:</label>
+            <input
+              type="text"
+              placeholder="Cidade de destino"
+              name="city"
+              id="city"
+              required
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="days">Dias de viagem:</label>
+            <input
+              type="number"
+              placeholder="Dias de viagem"
+              id="days"
+              name="days"
+              required
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="type">Companhia:</label>
+            <select name="type" id="type" name="type" required>
+              <option value="">Selecione sua companhia</option>
+              <option value="Em casal">Casal</option>
+              <option value="Em Família">Família</option>
+              <option value="Solo">Solo</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label for="budget">Orçamento:</label>
+            <input
+              type="number"
+              id="budget"
+              name="budget"
+              placeholder="Orçamento"
+            />
+          </div>
+
+        </form>
+        <a onclick="generateTrip()" class="button" href="#tripDetails">Ver meu roteiro</a>
+      </div>
+      <div>
+        <img src="assets/img/planning.svg" />
+      </div>
+    </section>
+
+    <section class="tripDetails" id="tripDetails">
+
+      <div id="schedule">
+        <h2>Estamos carregando seu roteiro...</h2>
+        <img src="assets/img/Process.gif">
+      </div>
+
+    </section>
+
+    
+
+    <footer>
+
+      <h2>Viaje<span>AI</span></h2>
+
+      <div id="icons">
+        <a href="https://www.linkedin.com/in/maria-beatriz-souza/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/mariabsouza/viajeAI" target="_blank"><i class="bi bi-github"></i></a>
+        
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

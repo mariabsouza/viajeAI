@@ -1,0 +1,166 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans';
+  scroll-behavior: smooth;
+  background-color: #f0f8ff;
+}
+
+.tripDetails {
+  display: none;
+  
+}
+
+#home {
+  display: flex;
+  flex-direction: row;
+  background-color: #f0f8ff;
+  align-items: center;
+}
+
+section {
+  min-height: 90vh;
+  padding: 4rem;
+  align-items: center;
+  margin: 0;
+}
+
+section img {
+  width: 100vh;
+}
+
+h1 {
+  font-family: 'Source Code Pro', monospace;;
+}
+
+.text {
+  margin-left: 2rem;
+}
+
+#description {
+  margin-bottom: 3rem;
+}
+
+
+span {
+  color: #e97713;
+}
+
+p {
+  font-family: 'DM Sans';
+}
+
+.button {
+  text-decoration: none;
+  background-color: #e97713;
+  color: white;
+  padding: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#tripForm {
+  background-color: #efb480;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+form {
+  margin-bottom: 3rem;
+}
+
+.form-control {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+input, select {
+  border: 1px solid #ff7700;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 30vw;
+}
+
+#tripDetails {
+
+  background-color: #f0f8ff;
+  align-items: center;
+  margin: auto;
+}
+
+#tripDetails  h2 {
+  color: #ff7700;
+  text-align: center;
+}
+
+.tripDetails.show {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.tripDetails.show img {
+  width: 100%;
+}
+
+#schedule img {
+  margin: auto;
+
+}
+
+footer h2 {
+  font-family: 'Source Code Pro', monospace;
+}
+
+footer span {
+  color: white;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 !important;
+  background-color: #e97713;
+  padding: 3rem;
+}
+
+footer #icons i {
+  font-size: 1.5rem;
+  margin: 1rem;
+
+  color: black;
+}
+
+.dia {
+  color: #e97713;
+  font-family: 'Source Code Pro', monospace;
+}
+
+@media screen and (max-width: 767px) {
+  #home {
+    flex-direction: column;
+  }
+
+  #tripForm img {
+    display: none;
+  }
+  section img {
+    width: 100%;
+  }
+
+
+  section {
+    height: 100vh;
+  }
+
+  input, select {
+    width: 100%;
+  }
+}
+
