@@ -7,7 +7,7 @@ O ViajeAI utiliza a inteligência artificial da OpenAI e cria um roteiro de viag
 
 # :pushpin: Como utilizar:
 
-Acesse o ViajeAI pelo link (link), desça a página até o formulário e preencha com as informações da sua viagem:
+Acesse o ViajeAI pelo link https://mariabsouza.github.io/viajeAI/, desça a página até o formulário e preencha com as informações da sua viagem:
 
 ![Formulário](/assets/img/form.jpg)
 
