@@ -142,7 +142,7 @@ footer #icons i {
   font-family: 'Source Code Pro', monospace;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   #home {
     flex-direction: column;
   }
